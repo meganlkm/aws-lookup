@@ -1,3 +1,4 @@
+from mock import patch, MagicMock
 from unittest import TestCase
 
 from aws_lookup import core
@@ -37,3 +38,8 @@ class CoreTest(TestCase):
             '*lue'
         )
         self.assertListEqual(res, ['this is a value'])
+
+    @patch('aws_lookup.core.Session')
+    def test_get_services(self, sess_mk):
+        core.get_services()
+        core.get_services(MagicMock())

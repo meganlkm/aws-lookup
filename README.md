@@ -3,6 +3,12 @@
 A utility that can be used from the command line or plugged into python projects that provides a simple search functionality for AWS objects.
 
 
+* [CLI](#cli)
+
+
+---
+
+
 ## Some thoughts...
 
 ### command ideas
@@ -35,12 +41,15 @@ aws-lookup {service} {object-name}[:{search-string}] [extra-things] [options]
 ### Use it in a python project
 
 
-## CLI
+---
+
+
+## <a name="cli"></a> CLI
 
 #### Usage
 
 ````
-Usage: aws-lookup [OPTIONS] [CLIENT] COMMAND [ARGS]...
+Usage: aws-lookup [OPTIONS] [SERVICE] COMMAND [ARGS]...
 
 Options:
   --version      print the aws-lookup version and exit
